@@ -14,6 +14,7 @@ public class KagayakiTanpatu : MonoBehaviour
     [SerializeField] private Image characterImage;
     [SerializeField] private List<Animator> sourceAnimators;
     [SerializeField] private KagayakiManager kManager;
+    [SerializeField] private ResultSet resultSet;
 
     private int gachaNum = 0;//0-9
     private float nowRarity = 0;
@@ -22,29 +23,28 @@ public class KagayakiTanpatu : MonoBehaviour
     private Sprite nowKagayaki;
 
     private List<Sprite> kagayakiSprite;
-    private List<string> raritySet; 
+    private List<string> raritySet;
+    private List<Color> colorSet;
     // Start is called before the first frame update
     void Start()
     {
         gachaNum = 0;
+        kagayakiSprite = new List<Sprite>();
+        raritySet = new List<string>();
+        colorSet = new List<Color>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        kagayakiSprite = new List<Sprite>();
-        raritySet = new List<string>();
+       
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            NextGacha();
-        }   
     }
 
     public void NextGacha()
     {
         //Debug you
-        nowRarity = Random.Range(0,5.5f);
+        //nowRarity = Random.Range(0,5.5f);
         nowKagayaki = kManager.GetKagayakikun(Random.Range(0, kManager.GetKagayakiLength()-1));
         //
 
@@ -61,14 +61,20 @@ public class KagayakiTanpatu : MonoBehaviour
         else
         {
             //Resultの表示
+            resultSet.ResultOpen();
 
-
-            //色々初期化
-            gachaNum = 0;
-            kagayakiSprite = new List<Sprite>();
-            raritySet = new List<string>();
+            
         }
         
+    }
+
+    public void Init10Ren()
+    {
+        //色々初期化
+        gachaNum = 0;
+        kagayakiSprite = new List<Sprite>();
+        raritySet = new List<string>();
+        colorSet = new List<Color>();
     }
 
 
@@ -114,6 +120,7 @@ public class KagayakiTanpatu : MonoBehaviour
 
         raritySet.Add(nowRarityRankText);
         kagayakiSprite.Add(nowKagayaki);
+        colorSet.Add(nowRarityColor);
     }
 
     public void CloseTanpatu()
@@ -142,5 +149,21 @@ public class KagayakiTanpatu : MonoBehaviour
     {
         animator.SetFloat("aaa", rarity);
         animator.SetTrigger("ChangeRarity");
+    }
+
+
+    public List<string> GetRaritySet()
+    {
+        return raritySet;
+    }
+
+    public List<Color> GetColorSet()
+    {
+        return colorSet;
+    }
+
+    public List<Sprite> GetKagayaki()
+    {
+        return kagayakiSprite;
     }
 }

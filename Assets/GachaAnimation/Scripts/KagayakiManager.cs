@@ -7,17 +7,30 @@ using UnityEngine.Playables;
 public class KagayakiManager : MonoBehaviour
 {
     [SerializeField] private PlayableDirector playableDirecter;
+    [SerializeField] private GameObject kagayakiTati;
+    [SerializeField] private List<KagayakiUnit> kagayakiUnits;
     [SerializeField] private List<Sprite> kagayakiKuntati;
     // Start is called before the first frame update
     void Start()
     {
         Invoke("Start10Ren", Random.Range(0, 3));
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void SetProbability()
+    {
+       foreach(KagayakiUnit k in kagayakiUnits)
+        {
+            int rarity = Random.Range(0, 5);
+            k.SetRarity(rarity);
+            k.ChangeRarity();
+        }
     }
 
     public Sprite GetKagayakikun(int index)
@@ -34,6 +47,9 @@ public class KagayakiManager : MonoBehaviour
 
     public void Start10Ren()
     {
+        kagayakiTati.SetActive(false);
+        kagayakiTati.SetActive(true);
         playableDirecter.Play();
+        SetProbability();
     }
 }
