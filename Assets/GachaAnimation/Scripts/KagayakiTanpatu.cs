@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using System.Linq;
 
 public class KagayakiTanpatu : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class KagayakiTanpatu : MonoBehaviour
     [SerializeField] private List<Animator> sourceAnimators;
     [SerializeField] private KagayakiManager kManager;
     [SerializeField] private ResultSet resultSet;
+    private MessageScrollBehavior behaviour;
 
     private int gachaNum = 0;//0-9
     private float nowRarity = 0;
@@ -32,6 +35,8 @@ public class KagayakiTanpatu : MonoBehaviour
         kagayakiSprite = new List<Sprite>();
         raritySet = new List<string>();
         colorSet = new List<Color>();
+
+        behaviour = GameObject.FindGameObjectWithTag("Respawn").GetComponent<MessageScrollBehavior>();
     }
 
     // Update is called once per frame
@@ -45,7 +50,7 @@ public class KagayakiTanpatu : MonoBehaviour
     {
         //Debug you
         //nowRarity = Random.Range(0,5.5f);
-        nowKagayaki = kManager.GetKagayakikun(Random.Range(0, kManager.GetKagayakiLength()-1));
+        nowKagayaki = kManager.GetKagayakikun(UnityEngine.Random.Range(0, kManager.GetKagayakiLength()-1));
         //
 
         if (gachaNum < 10)
@@ -118,6 +123,16 @@ public class KagayakiTanpatu : MonoBehaviour
                 break;
         }
 
+        if (rarityInt >= 4)
+        {
+            var intValue = UnityEngine.Random.Range(0, Enum.GetValues(typeof(HandleNames)).Length);
+            HandleNames names = (HandleNames)Enum.ToObject(typeof(HandleNames), intValue);
+            string name = names.ToString();
+
+            string message = name + "さんが "+nowRarityRankText+" " + nowKagayaki.name + " を引き当てました";
+            behaviour.RequestScroll(message);
+        }
+
         raritySet.Add(nowRarityRankText);
         kagayakiSprite.Add(nowKagayaki);
         colorSet.Add(nowRarityColor);
@@ -166,4 +181,19 @@ public class KagayakiTanpatu : MonoBehaviour
     {
         return kagayakiSprite;
     }
+
+    private enum HandleNames
+    {
+        漆黒の墜天使,
+        kirito,
+        kuraudo,
+        ああああ,
+        頭ハッピーセット,
+        asuna,
+        暗黒騎士たかし,
+        聖天使猫姫,
+        ゆうた,
+
+    }
+
 }

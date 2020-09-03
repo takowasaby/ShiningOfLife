@@ -10,6 +10,7 @@ public class KagayakiManager : MonoBehaviour
     [SerializeField] private GameObject kagayakiTati;
     [SerializeField] private List<KagayakiUnit> kagayakiUnits;
     [SerializeField] private List<Sprite> kagayakiKuntati;
+    [SerializeField] private PremiumGachaRates gachaRates;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,32 @@ public class KagayakiManager : MonoBehaviour
     {
        foreach(KagayakiUnit k in kagayakiUnits)
         {
-            int rarity = Random.Range(0, 5);
+            float gachaRarity = Random.Range(0, 100f);
+            int rarity = 0;
+
+            if (gachaRarity <= gachaRates.lrRate)
+            {
+                rarity = 5;
+            }else if (gachaRarity <= gachaRates.lrRate + gachaRates.urRate)
+            {
+                rarity = 4;
+            }else if(gachaRarity <= gachaRates.lrRate + gachaRates.urRate + gachaRates.ssrRate)
+            {
+                rarity = 3;
+            }else if(gachaRarity <= gachaRates.lrRate + gachaRates.urRate + gachaRates.ssrRate + gachaRates.srRate)
+            {
+                rarity = 2;
+            }
+            else if (gachaRarity <= gachaRates.lrRate + gachaRates.urRate + gachaRates.ssrRate + gachaRates.srRate+gachaRates.rRate)
+            {
+                rarity = 1;
+            }
+            else
+            {
+                rarity = 0;
+            }
+
+
             k.SetRarity(rarity);
             k.ChangeRarity();
         }

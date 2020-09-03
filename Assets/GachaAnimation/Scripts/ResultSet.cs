@@ -9,6 +9,7 @@ public class ResultSet : MonoBehaviour
     [SerializeField] private KagayakiManager kagayakiManager;
     [SerializeField] private List<ResultUnit> resultUnits=new List<ResultUnit>();
     [SerializeField] private KagayakiTanpatu kagayaki;
+
     private int nowSet = 0;
     // Start is called before the first frame update
     void Start()
@@ -62,6 +63,7 @@ public class ResultSet : MonoBehaviour
 
         resultUnits[nowSet].gameObject.SetActive(true);
         resultUnits[nowSet].SetCharaProfile(kagayakiSprite[nowSet], rarityString[nowSet], colorSet[nowSet]);
+
 
         nowSet++;
     }
