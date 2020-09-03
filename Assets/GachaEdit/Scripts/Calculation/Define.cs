@@ -101,8 +101,6 @@ public struct InnerInput
 
 public struct GraphOutput
 {
-    public UserCount userCount;
-    public UserSatisfaction satisfaction;
     public MoneyBalance balance;
     public UpdateOpness opness;
 }

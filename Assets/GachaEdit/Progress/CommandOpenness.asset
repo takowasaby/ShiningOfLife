@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a6562c7698fff44828c44a1c02dddf, type: 3}
   m_Name: CommandOpenness
   m_EditorClassIdentifier: 
-  CompleteGacha: 0
+  CompleteGacha: 1
   HukubukuroGacha: 0
   ConfirmGacha: 0
-  Update: 0
-  StoneDistribution: 0
+  Update: 1
+  StoneDistribution: 1
   Ceiling: 0

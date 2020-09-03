@@ -71,7 +71,7 @@ public class HeaderBehavior : MonoBehaviour
 
     private void UpdateSatisfactionValueText()
     {
-        this.satisfactionValueText.text = $"{this.satisfactionProgress.satisFactions.Last():####.##}";
+        this.satisfactionValueText.text = $"{this.satisfactionProgress.satisFactions.Last():000.00}";
     }
 
     private void UpdateIncomeValueText()
