@@ -21,35 +21,52 @@ public enum UserSegment
     Sekiyuo,
 }
 
-public struct GachaRatios
+public enum UpdateTarget
 {
-    public Dictionary<GachaRarity, float> ratios;
+    CompleteGacha,
+    Ceiling,
 }
 
-public struct GachaCeiling
+public enum GachaCategory
 {
-    public int value;
+    Normal,
+    Premium,
+    Box,
+    Complete,
+    LuckyBag,
+    Confirm,
+}
+
+public struct GachaRates
+{
+    public Dictionary<GachaRarity, float> rates;
 }
 
 public struct GachaParameter
 {
-    public GachaRatios ratios;
-    public GachaCeiling ceiling;
+    public GachaRates rates;
+    public bool isCeiling;
 }
 
 public struct StoneDistribution
 {
-    public int count;
+    public float rate;
 }
 
-public struct PromotionCost
+public struct Promotion
 {
     public long cost;
+    public UserSegment target;
+}
+
+public struct Update
+{
+    public UpdateTarget target;
 }
 
 public struct UserCount
 {
-    public Dictionary<UserSegment, long> ratios;
+    public Dictionary<UserSegment, long> counts;
 }
 
 public struct UserSatisfaction
@@ -63,11 +80,17 @@ public struct MoneyBalance
     public long expenditure;
 }
 
+public struct UpdateOpness
+{
+    public UpdateTarget[] opens;
+}
+
 public struct PlayerInput
 {
-    public GachaParameter gachaParam;
+    public Dictionary<GachaCategory, GachaParameter> gachaParams;
     public StoneDistribution stoneDistrib;
-    public PromotionCost promoConst;
+    public Promotion promotions;
+    public Update[] updates;
 }
 
 public struct InnerInput
@@ -81,4 +104,19 @@ public struct GraphOutput
     public UserCount userCount;
     public UserSatisfaction satisfaction;
     public MoneyBalance balance;
+    public UpdateOpness opness;
+}
+
+public struct IntermediateValues
+{
+    public float kindness;
+    public float bonusRate;
+}
+
+public struct CalculationHalfway
+{
+    public PlayerInput playerInput;
+    public InnerInput innerInput;
+    public GraphOutput graphOutput;
+    public IntermediateValues imValues;
 }
