@@ -21,6 +21,9 @@ public class MoveTexts : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             speed = 10f;
+        }else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            speed = 1f;
         }
 
     }
