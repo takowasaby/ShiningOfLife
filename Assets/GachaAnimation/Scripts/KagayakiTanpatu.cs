@@ -12,13 +12,17 @@ public class KagayakiTanpatu : MonoBehaviour
     [SerializeField] private Text rarityText2;
     [SerializeField] private Text characterName;
     [SerializeField] private Image characterImage;
-    [SerializeField] private Animator[] sourceAnimators;
+    [SerializeField] private List<Animator> sourceAnimators;
     [SerializeField] private KagayakiManager kManager;
 
     private int gachaNum = 0;//0-9
     private float nowRarity = 0;
     private string nowRarityRankText;
+    private Color nowRarityColor;
     private Sprite nowKagayaki;
+
+    private List<Sprite> kagayakiSprite;
+    private List<string> raritySet; 
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +32,9 @@ public class KagayakiTanpatu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        kagayakiSprite = new List<Sprite>();
+        raritySet = new List<string>();
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             NextGacha();
@@ -36,11 +43,32 @@ public class KagayakiTanpatu : MonoBehaviour
 
     public void NextGacha()
     {
+        //Debug you
         nowRarity = Random.Range(0,5.5f);
-        nowKagayaki = kManager.GetKagayakikun(Random.Range(0, 4));
-        Tanpatu(nowRarity, nowKagayaki);
+        nowKagayaki = kManager.GetKagayakikun(Random.Range(0, kManager.GetKagayakiLength()-1));
+        //
 
-        gachaNum++;
+        if (gachaNum < 10)
+        {
+            nowRarity = sourceAnimators[gachaNum].GetFloat("aaa");
+
+            Tanpatu(nowRarity, nowKagayaki);
+
+            
+
+            gachaNum++;
+        }
+        else
+        {
+            //Resultの表示
+
+
+            //色々初期化
+            gachaNum = 0;
+            kagayakiSprite = new List<Sprite>();
+            raritySet = new List<string>();
+        }
+        
     }
 
 
@@ -55,30 +83,37 @@ public class KagayakiTanpatu : MonoBehaviour
         {
             case 0:
                 nowRarityRankText = "Normal";
+                nowRarityColor = Color.black;
                 break;
 
             case 1:
                 nowRarityRankText = "Rare";
+                nowRarityColor = Color.red;
                 break;
 
             case 2:
                 nowRarityRankText = "Super Rare";
+                nowRarityColor = new Color(0, 1, 0);
                 break;
 
             case 3:
                 nowRarityRankText = "S Super Rare";
+                nowRarityColor = new Color(0, 1, 1);
                 break;
 
             case 4:
                 nowRarityRankText = "Ultra Rare";
+                nowRarityColor = Color.yellow;
                 break;
 
             case 5:
                 nowRarityRankText = "Legend Rare";
+                nowRarityColor = new Color(1,0,1);//murasaki
                 break;
         }
 
-
+        raritySet.Add(nowRarityRankText);
+        kagayakiSprite.Add(nowKagayaki);
     }
 
     public void CloseTanpatu()
@@ -91,6 +126,8 @@ public class KagayakiTanpatu : MonoBehaviour
         RarityObject.SetActive(true);
         rarityText1.text = nowRarityRankText;
         rarityText2.text = nowRarityRankText;
+        rarityText1.color = nowRarityColor;
+        rarityText2.color = nowRarityColor;
         characterName.text = nowKagayaki.name;
         characterImage.sprite = nowKagayaki;
     }

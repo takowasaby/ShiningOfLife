@@ -27,6 +27,11 @@ public class KagayakiManager : MonoBehaviour
         return kagayakiKuntati[index];
     }
 
+    public int GetKagayakiLength()
+    {
+        return kagayakiKuntati.Count;
+    }
+
     public void Start10Ren()
     {
         playableDirecter.Play();
