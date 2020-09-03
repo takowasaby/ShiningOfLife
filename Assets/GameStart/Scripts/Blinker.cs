@@ -17,14 +17,14 @@ public class Blinker : MonoBehaviour
     void Start()
     {
         text = this.gameObject.GetComponent<Text>();
-        text.color= new Color(0,0,0,0);
+        text.color= new Color(66/255,70/255,91/255,0);
     }
 
     // Update is called once per frame
     void Update()
     {
         zikanSwitch += Time.deltaTime;
-        if (zikanSwitch > 3f)
+        if (zikanSwitch > 2f)
         {
             text.color = GetAlphaColor(text.color);
         }
@@ -34,7 +34,7 @@ public class Blinker : MonoBehaviour
     Color GetAlphaColor(Color color)
     {
         time += Time.deltaTime * 0.35f * speed;
-        color.a = Mathf.Sin(time);
+        color = new Color(66/255,70/255,91/255,Mathf.Sin(time));
         return color;
     }
 }

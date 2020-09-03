@@ -13,9 +13,9 @@ public class MoveTitle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x <900f)
+        if (transform.position.x <1380f)
         {
-            transform.Translate(2f, 0f, 0f);
+            transform.Translate(8f, 0f, 0f);
         }
     }
 }

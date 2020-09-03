@@ -16,7 +16,7 @@ public class ToOpening : MonoBehaviour
     void Update()
     {
         zikanSwitch += Time.deltaTime;
-        if (Input.anyKeyDown && zikanSwitch > 3f)
+        if (Input.anyKeyDown && zikanSwitch > 2f)
         {
             SceneManager.LoadScene("Opening");
             

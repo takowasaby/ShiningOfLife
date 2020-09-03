@@ -15,7 +15,7 @@ public class MoveChara : MonoBehaviour
     {
         if (transform.position.x >500f)
         {
-            transform.Translate(-2f, 0f, 0f);
+            transform.Translate(-5f, 0f, 0f);
         }
     }
 }
