@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18862d5dffe08644596f37fb12727181, type: 3}
+  m_Name: UserCountProgress
+  m_EditorClassIdentifier: 
+  MukakinUserCounts: 0000000000000000
+  BikakinUserCounts: 0000000000000000
+  TyukakinUserCounts: 0000000000000000
+  JukakinUserCounts: 0000000000000000
+  SekiyuoCounts: 0000000000000000
