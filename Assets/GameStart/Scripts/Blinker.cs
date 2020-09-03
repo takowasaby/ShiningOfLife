@@ -24,7 +24,7 @@ public class Blinker : MonoBehaviour
     void Update()
     {
         zikanSwitch += Time.deltaTime;
-        if (zikanSwitch > 2f)
+        if (zikanSwitch > 1.5f)
         {
             text.color = GetAlphaColor(text.color);
         }
