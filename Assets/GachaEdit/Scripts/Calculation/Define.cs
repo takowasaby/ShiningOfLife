@@ -63,6 +63,7 @@ public struct MoneyBalance
     public long expenditure;
 }
 
+
 public struct PlayerInput
 {
     public GachaParameter gachaParam;
