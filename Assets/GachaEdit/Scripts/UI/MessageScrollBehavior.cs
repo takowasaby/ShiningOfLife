@@ -26,11 +26,11 @@ public class MessageScrollBehavior : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                this.RequestScroll("Estuans interius ira vehementi");
+                this.RequestScroll("滲み出す混濁の紋章 不遜なる狂気の器 湧き上がり・否定し・痺れ・瞬き・眠りを妨げる 爬行(はこう)する鉄の王女 絶えず自壊する泥の人形 結合せよ 反発せよ 地に満ち 己の無力を知れ破道の九十・黒棺");
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                this.RequestScroll("Sephiroth!");
+                this.RequestScroll("千手の涯 届かざる闇の御手 映らざる天の射手 光を落とす道 火種を煽る風 集いて惑うな我が指を見よ 光弾・八身・九条・天経・疾宝・大輪・灰色の砲塔 弓引く彼方 皎皎として消ゆ");
             }
         }
 
