@@ -9,17 +9,13 @@ public class KagayakiUnit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetRarity(Random.Range(0, 5));
-        ChangeRarity();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            ChangeRarity();
-        }
+        
     }
 
     public void SetRarity(int rarity)
