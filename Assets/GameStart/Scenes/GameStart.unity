@@ -324,6 +324,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e2684c4a21b8c49b6bef895b14c089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  co: {fileID: 11400000, guid: b623855e17a337e4d8d794d8a6af70a3, type: 2}
+  mp: {fileID: 11400000, guid: 8f89919befa661f4fa1af0029fecb03b, type: 2}
+  tp: {fileID: 11400000, guid: fd515eb013ed6974482a1d718eb1a14b, type: 2}
+  sp: {fileID: 11400000, guid: 29f6cff303386c846a89331ed11114e1, type: 2}
+  ucp: {fileID: 11400000, guid: be956199bdfdd284eb9d11f3a1a68a5d, type: 2}
+  pgr: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!4 &643504728
 Transform:
   m_ObjectHideFlags: 0
