@@ -14,8 +14,8 @@ public class CompositeCalculator : MonoBehaviour
     public CalculationHalfway Calc(CalculationHalfway halfway)
     {
         var h0 = this.gachaCalculator.Calc(halfway);
-        var h1 = this.gachaCalculator.Calc(h0);
-        var h2 = this.gachaCalculator.Calc(h1);
-        return this.gachaCalculator.Calc(h2);
+        var h1 = this.otherCalculator.Calc(h0);
+        var h2 = this.userCalculator.Calc(h1);
+        return this.basicCalculator.Calc(h2);
     }
 }

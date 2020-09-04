@@ -4997,6 +4997,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1177772309}
+        m_MethodName: ForceSave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &876834249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6928,6 +6939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50292fa2e4eb1d24082c3d3811525df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gachaTypesBehavior: {fileID: 1889817688}
   collector: {fileID: 1685566840}
   commandOpenness: {fileID: 11400000, guid: b623855e17a337e4d8d794d8a6af70a3, type: 2}
   changeProbabilityBehavior: {fileID: 1697690812}
