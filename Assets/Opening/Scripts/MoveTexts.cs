@@ -20,11 +20,26 @@ public class MoveTexts : MonoBehaviour
         transform.Translate(0, moveDis,0);
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            speed = 10f;
+            speed = 10000f*Time.deltaTime;
         }else if (Input.GetKeyUp(KeyCode.Space))
         {
-            speed = 1f;
+            speed = 1000f*Time.deltaTime;
         }
 
+    }
+
+    private void FixedUpdate()
+    {
+
+        moveDis = 0.1f * speed;
+        transform.Translate(0, moveDis, 0);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            speed = 10000f * Time.deltaTime;
+        }
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            speed = 1000f * Time.deltaTime;
+        }
     }
 }
