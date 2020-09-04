@@ -9,6 +9,7 @@ public class GachaSelectBehavior : MonoBehaviour
     // 呼び出し時にリロード
     // OK時の保存
     // ガチャ選択によっては天井と確率操作を無効に
+    public GachaTypesBehavior gachaTypesBehavior;
     public PlayerInputCollectorBehavior collector;
     public CommandOpenness commandOpenness;
 
@@ -37,6 +38,16 @@ public class GachaSelectBehavior : MonoBehaviour
             this.changeProbabilityGroup.interactable = true;
             this.ceilingToggle.interactable = true;
         }
+    }
+
+    public void ForceSave()
+    {
+        var currentCategory = this.gachaTypesBehavior.select;
+        this.collector.playerInput.gachaParams[currentCategory] = new GachaParameter
+        {
+            rates = this.changeProbabilityBehavior.GetGachaRates(),
+            isCeiling = this.ceilingToggle.isOn
+        };
     }
 
     private void Start()
