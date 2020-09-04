@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class ToShortResult : MonoBehaviour
+public class ToTitle : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float zikan = 0.0f;
     void Start()
     {
         
@@ -15,10 +15,11 @@ public class ToShortResult : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        zikan += Time.deltaTime;
-        if(zikan > 5f)
-        {
-            SceneManager.LoadScene("gachaTest");
-        }
+        
+    }
+
+    public void GotoTitle()
+    {
+        SceneManager.LoadScene("GameStart");
     }
 }
