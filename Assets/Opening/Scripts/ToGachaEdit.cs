@@ -15,7 +15,7 @@ public class ToGachaEdit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canvas.position.y > 2000)
+        if(canvas.position.y > 1900)
         {
             SceneManager.LoadScene("GachaEdit");
         }

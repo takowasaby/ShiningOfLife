@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class ToShortResult : MonoBehaviour
+public class ShowTitle : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float zikan = 0.0f;
+    public GameObject button;
+    public float zikan;
     void Start()
     {
-        
+        button.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,7 +18,8 @@ public class ToShortResult : MonoBehaviour
         zikan += Time.deltaTime;
         if(zikan > 5f)
         {
-            SceneManager.LoadScene("gachaTest");
+            button.SetActive(true);
+
         }
     }
 }

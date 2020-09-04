@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Opening/Scenes/Opening.unity
     guid: fdae531a9c37178419c753f6e61bcb52
   - enabled: 0
-    path: Assets/Opening/Scenes/ShowStory.unity
+    path: 
     guid: a76b9333587442b4c82447c7d4cd2939
   - enabled: 1
     path: Assets/GameStart/Scenes/GameStart.unity
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GachaEdit/Scenes/GachaEdit.unity
     guid: 6602f07950ae875419a5ff0be38772f2
+  - enabled: 1
+    path: Assets/GachaAnimation/Scene/gachaTest.unity
+    guid: 8d2165471d1d00640b9ed1f0c34ed493
   m_configObjects: {}
