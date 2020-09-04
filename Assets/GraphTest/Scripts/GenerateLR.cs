@@ -67,9 +67,9 @@ public class GenerateLR : MonoBehaviour
         Vector2 pos_Satifi = new Vector2(SatifiLineGroup.transform.position.x, SatifiLineGroup.transform.position.y);
         Vector2 pos_User = new Vector2(UserLineGroup.transform.position.x, UserLineGroup.transform.position.y);
 
-        int money_rate = 100000;//yosinanikaeru
+        int money_rate = 100000000;//yosinanikaeru
         int satifi_rate = 1;
-        int user_rate = 1000;
+        int user_rate = 50000;
 
         float unit = 40f;
 
