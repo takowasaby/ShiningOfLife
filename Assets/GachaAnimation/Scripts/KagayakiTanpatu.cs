@@ -138,6 +138,16 @@ public class KagayakiTanpatu : MonoBehaviour
         colorSet.Add(nowRarityColor);
     }
 
+    public Color GetNowColor()
+    {
+        return nowRarityColor;
+    }
+
+    public float GetNowRarity()
+    {
+        return nowRarity;
+    }
+
     public void CloseTanpatu()
     {
         tanpatuObject.SetActive(false);
@@ -193,7 +203,10 @@ public class KagayakiTanpatu : MonoBehaviour
         暗黒騎士たかし,
         聖天使猫姫,
         ゆうた,
-
+        気持ち悪い,
+        J,
+        けんた,
+        目玉男,
     }
 
 }
