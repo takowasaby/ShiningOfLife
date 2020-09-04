@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fac3890488093144a8e0a7dbed694ec, type: 3}
   m_Name: PremiumGachaRates
   m_EditorClassIdentifier: 
-  nRate: 50
   rRate: 0
   srRate: 0
   ssrRate: 0
-  urRate: 30
-  lrRate: 20
+  urRate: 0
+  lrRate: 10
+

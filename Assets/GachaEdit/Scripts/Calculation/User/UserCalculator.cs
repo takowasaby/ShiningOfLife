@@ -12,10 +12,10 @@ public class UserCalculator : MonoBehaviour
         var satisfaction = halfway.innerInput.satisfaction.value;
         var kindness = halfway.imValues.kindness;
 
-        halfway.innerInput.userCount.counts[UserSegment.JuKakin] += (long)(tyuKakin * (satisfaction / 500f * (1f - kindness / 5f)));
-        halfway.innerInput.userCount.counts[UserSegment.TyuKakin] = (long)(((long)(tyuKakin + (1 - satisfaction / 500f)) + (long)(biKakin * (satisfaction / 200f))) * (1f - kindness / 10f));
-        halfway.innerInput.userCount.counts[UserSegment.BiKakin] = (long)(((long)(biKakin + (1 - satisfaction / 200f)) + (long)(mukakin * (satisfaction / 100f))) * (1f + kindness / 10f));
-        halfway.innerInput.userCount.counts[UserSegment.MuKakin] += (long)(mukakin * (satisfaction / 50f * (1 + kindness / 20f)));
+        halfway.innerInput.userCount.counts[UserSegment.JuKakin] += (long)(tyuKakin * (satisfaction / 500f * (1f - kindness / 2f)));
+        halfway.innerInput.userCount.counts[UserSegment.TyuKakin] = (long)(((long)(tyuKakin + (1 - satisfaction / 500f)) + (long)(biKakin * (satisfaction / 200f))) * (1f - kindness / 5f));
+        halfway.innerInput.userCount.counts[UserSegment.BiKakin] = (long)(((long)(biKakin + (1 - satisfaction / 200f)) + (long)(mukakin * (satisfaction / 100f))) * (1f + kindness / 20f));
+        halfway.innerInput.userCount.counts[UserSegment.MuKakin] += (long)(mukakin * (satisfaction / 50f * (1 + kindness / 30f)));
 
         if (satisfaction == 100f)
         {

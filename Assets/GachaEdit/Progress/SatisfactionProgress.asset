@@ -13,12 +13,4 @@ MonoBehaviour:
   m_Name: SatisfactionProgress
   m_EditorClassIdentifier: 
   satisFactions:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 5
