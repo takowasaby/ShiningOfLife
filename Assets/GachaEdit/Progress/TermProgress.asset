@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738c769297122384e8a115487c0da659, type: 3}
   m_Name: TermProgress
   m_EditorClassIdentifier: 
-  currentTerm: 10
+  currentTerm: 0
   termNames:
   - "4\u6708"
   - "5\u6708"
