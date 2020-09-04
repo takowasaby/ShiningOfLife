@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fac3890488093144a8e0a7dbed694ec, type: 3}
-  m_Name: New Premium Gacha Rates
+  m_Name: PremiumGachaRates
   m_EditorClassIdentifier: 
   nRate: 100
   rRate: 0
