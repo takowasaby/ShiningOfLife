@@ -3436,6 +3436,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6d7a3b021cb25844aa79d6de2fb4d766, type: 3}
   - {fileID: 21300000, guid: 42acb1c9598a94745a337adecf4529e3, type: 3}
   - {fileID: 21300000, guid: 6c49472fde43bf24ab531f96bde95cc7, type: 3}
+  - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
+  - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
+  - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!114 &48574552476346212
 MonoBehaviour:
