@@ -19,6 +19,11 @@ public class NextButtonBehavior : MonoBehaviour
     public void GoNext()
     {
         this.Simulation();
+        Invoke("Aaa", 1f);
+    }
+
+    private void Aaa()
+    {
         SceneManager.LoadScene("Loading");
     }
 

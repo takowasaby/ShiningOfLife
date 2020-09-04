@@ -16737,6 +16737,7 @@ RectTransform:
   - {fileID: 1490950919}
   - {fileID: 979737344}
   - {fileID: 1166177473}
+  - {fileID: 1383431437}
   m_Father: {fileID: 2112693485}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30334,6 +30335,128 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378105993}
+  m_CullTransparentMesh: 0
+--- !u!1 &1383431436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383431437}
+  - component: {fileID: 1383431440}
+  - component: {fileID: 1383431439}
+  - component: {fileID: 1383431438}
+  m_Layer: 5
+  m_Name: nigiyakasi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1383431437
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383431436}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 390575039}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 788, y: 86}
+  m_SizeDelta: {x: 350, y: 350}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1383431438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383431436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0d029d252d8e0c047b8ab480c25f4517, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1383431439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383431436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e25581647031e34196daf27b0110984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kagayakitati:
+  - {fileID: 21300000, guid: 1b4f2a8fa3f524547b71d2433488c779, type: 3}
+  - {fileID: 21300000, guid: 0d029d252d8e0c047b8ab480c25f4517, type: 3}
+  - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
+  - {fileID: 21300000, guid: 687c6390b1b716d4784486a144cf9f0e, type: 3}
+  - {fileID: 21300000, guid: ad0262bf5e845ab4e8fbd4b533debf3d, type: 3}
+  - {fileID: 21300000, guid: f727f2b5d7555f247be7a16abe877d0d, type: 3}
+  - {fileID: 21300000, guid: 6d7a3b021cb25844aa79d6de2fb4d766, type: 3}
+  - {fileID: 21300000, guid: 8309098e0e90a3b44aea94f89fd131ba, type: 3}
+  - {fileID: 21300000, guid: 6d7a3b021cb25844aa79d6de2fb4d766, type: 3}
+  - {fileID: 21300000, guid: 8e8fe5d7612b93f438e93f3e6fded1d1, type: 3}
+  - {fileID: 21300000, guid: 42acb1c9598a94745a337adecf4529e3, type: 3}
+  - {fileID: 21300000, guid: 62678040f0610174c9ffa7989252a956, type: 3}
+  - {fileID: 21300000, guid: 3c4bb12555219c840a255ddd5b0c1e49, type: 3}
+  - {fileID: 21300000, guid: 9c00f4e5ca14d2b4e84b36addfb54c26, type: 3}
+  - {fileID: 21300000, guid: 495dd99657ecdb94f9c438e1f33d8a6e, type: 3}
+  - {fileID: 21300000, guid: fbbd211babe390f40b9f070fe8da8546, type: 3}
+  - {fileID: 21300000, guid: 6c49472fde43bf24ab531f96bde95cc7, type: 3}
+  - {fileID: 21300000, guid: b0622e79927fa4f4686e52dbdbd130bd, type: 3}
+  - {fileID: 21300000, guid: bf30452b355442047bb99094ab6ec9df, type: 3}
+  - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
+  - {fileID: 21300000, guid: 9e4e04d465f6f4f45b2ee2d5366ec266, type: 3}
+  - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
+  - {fileID: 21300000, guid: 0ad84004bde5e5e4daadae84d031e54f, type: 3}
+  - {fileID: 21300000, guid: e98ccf27963a60b40bd8601fdcd60740, type: 3}
+  - {fileID: 21300000, guid: b6c9d30d1802d024e8c1913fb8930b57, type: 3}
+  - {fileID: 21300000, guid: 3943cd22b115bc94fb68aaede2407f8b, type: 3}
+  - {fileID: 21300000, guid: 2a0d7b2c15a7194499c2d1d4d9e3064d, type: 3}
+  - {fileID: 21300000, guid: 2d5a244a31a2b1442b2e76e0812a89b2, type: 3}
+  - {fileID: 21300000, guid: 91370cefd944c804f9376f2864d6f456, type: 3}
+  - {fileID: 21300000, guid: 1df0fba9b6c26a745ad5bf91fae794d0, type: 3}
+  - {fileID: 21300000, guid: cf684e143e8aba3409f0ff0c78e52d15, type: 3}
+  - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
+  isRandomSaisei: 1
+  time: 0.81
+--- !u!222 &1383431440
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383431436}
   m_CullTransparentMesh: 0
 --- !u!1 &1387153430
 GameObject:
@@ -47402,6 +47525,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b6c9d30d1802d024e8c1913fb8930b57, type: 3}
   - {fileID: 21300000, guid: 1df0fba9b6c26a745ad5bf91fae794d0, type: 3}
   - {fileID: 21300000, guid: 0d029d252d8e0c047b8ab480c25f4517, type: 3}
+  - {fileID: 21300000, guid: 42acb1c9598a94745a337adecf4529e3, type: 3}
+  - {fileID: 21300000, guid: 6c49472fde43bf24ab531f96bde95cc7, type: 3}
+  - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
+  - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
+  - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
+  - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!4 &48574551499559459
 Transform:
@@ -49092,6 +49221,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b6c9d30d1802d024e8c1913fb8930b57, type: 3}
   - {fileID: 21300000, guid: 1df0fba9b6c26a745ad5bf91fae794d0, type: 3}
   - {fileID: 21300000, guid: 0d029d252d8e0c047b8ab480c25f4517, type: 3}
+  - {fileID: 21300000, guid: 42acb1c9598a94745a337adecf4529e3, type: 3}
+  - {fileID: 21300000, guid: 6c49472fde43bf24ab531f96bde95cc7, type: 3}
+  - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
+  - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
+  - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
+  - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!1001 &48574551728990573
 PrefabInstance:
@@ -61636,6 +61771,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b6c9d30d1802d024e8c1913fb8930b57, type: 3}
   - {fileID: 21300000, guid: 1df0fba9b6c26a745ad5bf91fae794d0, type: 3}
   - {fileID: 21300000, guid: 0d029d252d8e0c047b8ab480c25f4517, type: 3}
+  - {fileID: 21300000, guid: 42acb1c9598a94745a337adecf4529e3, type: 3}
+  - {fileID: 21300000, guid: 0d029d252d8e0c047b8ab480c25f4517, type: 3}
+  - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
+  - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
+  - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
+  - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!114 &5754180826432291419
 MonoBehaviour:
@@ -78051,6 +78192,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0d029d252d8e0c047b8ab480c25f4517, type: 3}
   - {fileID: 21300000, guid: b6c9d30d1802d024e8c1913fb8930b57, type: 3}
   - {fileID: 21300000, guid: 1df0fba9b6c26a745ad5bf91fae794d0, type: 3}
+  - {fileID: 21300000, guid: 6c49472fde43bf24ab531f96bde95cc7, type: 3}
+  - {fileID: 21300000, guid: 42acb1c9598a94745a337adecf4529e3, type: 3}
+  - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
+  - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
+  - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
+  - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!4 &7183431346161028077
 Transform:
