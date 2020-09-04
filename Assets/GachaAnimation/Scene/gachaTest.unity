@@ -30448,6 +30448,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1df0fba9b6c26a745ad5bf91fae794d0, type: 3}
   - {fileID: 21300000, guid: cf684e143e8aba3409f0ff0c78e52d15, type: 3}
   - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
+  - {fileID: 21300000, guid: 9c2c1076b30534446b8cbff2098f90ff, type: 3}
+  - {fileID: 21300000, guid: 15659a340926d9b428d12c19585f7635, type: 3}
+  - {fileID: 21300000, guid: ddd4801e874fcc34ba0f4a5307cf393b, type: 3}
+  - {fileID: 21300000, guid: 8f159f57f9ffd784386d782729b901f2, type: 3}
   isRandomSaisei: 1
   time: 0.81
 --- !u!222 &1383431440
@@ -42160,6 +42164,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913631911}
   m_CullTransparentMesh: 0
+--- !u!1 &1920859079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1322552559766039100, guid: d7cd2fe8a14649745819986839a2435c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1656091040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1920859080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920859079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5286fdee26ac34bbd3cfbcecb1d27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviour: {fileID: 1920859081}
+--- !u!114 &1920859081 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1322552559766039096, guid: d7cd2fe8a14649745819986839a2435c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1656091040}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920859079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0afcb07d6d602c4dbd56b7ac2d35fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1934559627
 GameObject:
   m_ObjectHideFlags: 0
@@ -47531,6 +47566,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
   - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
   - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
+  - {fileID: 21300000, guid: 9c2c1076b30534446b8cbff2098f90ff, type: 3}
+  - {fileID: 21300000, guid: 15659a340926d9b428d12c19585f7635, type: 3}
+  - {fileID: 21300000, guid: ddd4801e874fcc34ba0f4a5307cf393b, type: 3}
+  - {fileID: 21300000, guid: 8f159f57f9ffd784386d782729b901f2, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!4 &48574551499559459
 Transform:
@@ -49227,6 +49266,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
   - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
   - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
+  - {fileID: 21300000, guid: ddd4801e874fcc34ba0f4a5307cf393b, type: 3}
+  - {fileID: 21300000, guid: 15659a340926d9b428d12c19585f7635, type: 3}
+  - {fileID: 21300000, guid: 9c2c1076b30534446b8cbff2098f90ff, type: 3}
+  - {fileID: 21300000, guid: 8f159f57f9ffd784386d782729b901f2, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!1001 &48574551728990573
 PrefabInstance:
@@ -61777,6 +61820,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
   - {fileID: 21300000, guid: ae47ceb3edb84284faab15b6a30f9770, type: 3}
   - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
+  - {fileID: 21300000, guid: 8f159f57f9ffd784386d782729b901f2, type: 3}
+  - {fileID: 21300000, guid: 15659a340926d9b428d12c19585f7635, type: 3}
+  - {fileID: 21300000, guid: 9c2c1076b30534446b8cbff2098f90ff, type: 3}
+  - {fileID: 21300000, guid: ddd4801e874fcc34ba0f4a5307cf393b, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!114 &5754180826432291419
 MonoBehaviour:
@@ -78198,6 +78245,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b017a3e75ff7ff444baaa4ecffb4050a, type: 3}
   - {fileID: 21300000, guid: ae94e18b07f181c458fc4b9f191edd5b, type: 3}
   - {fileID: 21300000, guid: 17ae3cc34c37e83458333457efeb7097, type: 3}
+  - {fileID: 21300000, guid: 9c2c1076b30534446b8cbff2098f90ff, type: 3}
+  - {fileID: 21300000, guid: ddd4801e874fcc34ba0f4a5307cf393b, type: 3}
+  - {fileID: 21300000, guid: 8f159f57f9ffd784386d782729b901f2, type: 3}
+  - {fileID: 21300000, guid: 15659a340926d9b428d12c19585f7635, type: 3}
   gachaRates: {fileID: 11400000, guid: eb8c2c3cd23bcbf498bb5d752f180b24, type: 2}
 --- !u!4 &7183431346161028077
 Transform:
