@@ -21,17 +21,15 @@ public class ShowProgress : MonoBehaviour
     // SatisfactionProgress
     // member : satisFactions(List<float>)
     public SatisfactionProgress sp;
-    // OtherProgress
-    // member : gachaCounts(List<long>)
-    public OtherProgress op;
     // UserCountProgress ucp
     // member(List<long>) : MukakinUserCounts,BikakinUserCounts,TyukakinUserCounts,JukakinUserCounts,SekiyuoCounts
     public UserCountProgress ucp;
 
     // display
-    public Text totalSales, finalSatisfaction, finalNumberOfUsers, totalNumberOfGacha, rank;
-    long totalSalesN,  finalNumberOfUsersN, totalNumberOfGachaN;
+    public Text totalSales, finalSatisfaction, finalNumberOfUsers, rank;
+    long totalSalesN,  finalNumberOfUsersN;
     float finalSatisfactionN;
+    String[] rankArray = {"覇権","特になし","大コケ","オワコン" };
 
     void Start()
     {
@@ -44,9 +42,6 @@ public class ShowProgress : MonoBehaviour
         // 総ユーザー数は各セグメントの最後の月の和
         finalNumberOfUsersN = ucp.MukakinUserCounts.Last() + ucp.BikakinUserCounts.Last() + ucp.TyukakinUserCounts.Last() + ucp.JukakinUserCounts.Last() + ucp.SekiyuoCounts.Last();
         finalNumberOfUsers.text += finalNumberOfUsersN.ToString()+"人";
-        // 総ガチャ回された数はgachaCountsの最後の要素
-        totalNumberOfGachaN = op.gachaCounts.Last();
-        totalNumberOfGacha.text += totalNumberOfGachaN.ToString()+"回";
         // rankは要相談
 
     }
@@ -56,6 +51,7 @@ public class ShowProgress : MonoBehaviour
     {
        // Debug.Log(co.Ceiling);
     }
+
 
 
 }
