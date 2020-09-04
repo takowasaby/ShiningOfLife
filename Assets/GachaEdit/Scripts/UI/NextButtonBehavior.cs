@@ -19,7 +19,7 @@ public class NextButtonBehavior : MonoBehaviour
     public void GoNext()
     {
         this.Simulation();
-        Invoke("Aaa", 1f);
+        Invoke("Aaa", 3f);
     }
 
     private void Aaa()
