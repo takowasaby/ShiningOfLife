@@ -14,7 +14,7 @@ public class KagayakiManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Start10Ren", Random.Range(0, 3));
+        Invoke("Start10Ren", Random.Range(0, 4f));
         
     }
 

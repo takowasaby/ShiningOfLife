@@ -50,7 +50,7 @@ public class KagayakiTanpatu : MonoBehaviour
     {
         //Debug you
         //nowRarity = Random.Range(0,5.5f);
-        nowKagayaki = kManager.GetKagayakikun(UnityEngine.Random.Range(0, kManager.GetKagayakiLength()-1));
+        nowKagayaki = kManager.GetKagayakikun(UnityEngine.Random.Range(0, kManager.GetKagayakiLength()));
         //
 
         if (gachaNum < 10)
