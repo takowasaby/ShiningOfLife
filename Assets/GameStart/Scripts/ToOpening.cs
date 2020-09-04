@@ -18,14 +18,20 @@ public class ToOpening : MonoBehaviour
     void Start()
     {
         ucp.MukakinUserCounts = new List<long>();
+        ucp.MukakinUserCounts.Add(1000L);
         ucp.BikakinUserCounts = new List<long>();
+        ucp.BikakinUserCounts.Add(0L);
         ucp.TyukakinUserCounts = new List<long>();
+        ucp.TyukakinUserCounts.Add(0L);
         ucp.JukakinUserCounts = new List<long>();
+        ucp.JukakinUserCounts.Add(0L);
         ucp.SekiyuoCounts = new List<long>();
+        ucp.SekiyuoCounts.Add(0L);
 
         tp.currentTerm = 0;
 
         mp.moneys = new List<long>();
+        mp.moneys.Add(0L);
 
         pgr.nRate = 100f;
         pgr.rRate = 0f;
@@ -35,6 +41,7 @@ public class ToOpening : MonoBehaviour
         pgr.lrRate = 0f;
 
         sp.satisFactions = new List<float>();
+        sp.satisFactions.Add(5f);
     }
 
     // Update is called once per frame
