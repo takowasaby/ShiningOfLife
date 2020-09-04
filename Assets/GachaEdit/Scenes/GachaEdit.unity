@@ -8140,6 +8140,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271428487}
   m_CullTransparentMesh: 0
+--- !u!1 &1287510343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287510345}
+  - component: {fileID: 1287510344}
+  m_Layer: 0
+  m_Name: MessageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1287510344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287510343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9c8a7ba1301a9418c5fa9979b45d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollBehaviour: {fileID: 1703331603}
+  commandOpenness: {fileID: 11400000, guid: b623855e17a337e4d8d794d8a6af70a3, type: 2}
+  moneyProgress: {fileID: 11400000, guid: 8f89919befa661f4fa1af0029fecb03b, type: 2}
+  satisfactionProgress: {fileID: 11400000, guid: 29f6cff303386c846a89331ed11114e1,
+    type: 2}
+  userCountProgress: {fileID: 11400000, guid: be956199bdfdd284eb9d11f3a1a68a5d, type: 2}
+  termProgress: {fileID: 11400000, guid: fd515eb013ed6974482a1d718eb1a14b, type: 2}
+  moneyNoticeThreshold: 000000000000000000e1f5050000000080b2e60e000000000065cd1d0000000000e40b5402000000
+  userNoticeThreshold: 00000000000000001027000000000000a08601000000000040420f00000000008096980000000000
+  satifiNoticeThreshold: 00000000000000000a000000000000001e0000000000000041000000000000005500000000000000
+--- !u!4 &1287510345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287510343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2208.2822, y: 31.837215, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1289287694
 GameObject:
   m_ObjectHideFlags: 0
@@ -10146,6 +10199,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1703331603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1322552559766039096, guid: d7cd2fe8a14649745819986839a2435c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1322552559795249885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0afcb07d6d602c4dbd56b7ac2d35fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1709715496
 GameObject:
   m_ObjectHideFlags: 0
