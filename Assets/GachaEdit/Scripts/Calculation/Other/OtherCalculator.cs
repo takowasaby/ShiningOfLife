@@ -22,7 +22,7 @@ public class OtherCalculator : MonoBehaviour
         var promotion = halfway.playerInput.promotions;
         if (promotion.cost > 0L)
         {
-            halfway.innerInput.userCount.counts[promotion.target] *= 2;
+            halfway.innerInput.userCount.counts[promotion.target] += halfway.innerInput.userCount.counts[promotion.target] / 3;
             halfway.graphOutput.balance.expenditure += promotion.cost;
         }
 

@@ -19,9 +19,9 @@ public class BasicCalculator : MonoBehaviour
         
         var income =
             userCounts[UserSegment.BiKakin] * 1000L +
-            (long)(userCounts[UserSegment.TyuKakin] * 10000L * (1 + ceilingCount * 0.1)) +
-            (long)(userCounts[UserSegment.JuKakin] * 50000L * (1 - ceilingCount * 0.1)) +
-            userCounts[UserSegment.Sekiyuo] * 1000000L;
+            (long)(userCounts[UserSegment.TyuKakin] * 8000L * (1 + ceilingCount * 0.1)) +
+            (long)(userCounts[UserSegment.JuKakin] * 30000L * (1 - ceilingCount * 0.1)) +
+            userCounts[UserSegment.Sekiyuo] * 50000000L;
 
         halfway.graphOutput.balance.income = (long)(income * halfway.imValues.bonusRate);
 
