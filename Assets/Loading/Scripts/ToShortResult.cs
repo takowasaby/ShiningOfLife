@@ -18,7 +18,7 @@ public class ToShortResult : MonoBehaviour
         zikan += Time.deltaTime;
         if(zikan > 5f)
         {
-            SceneManager.LoadScene("ShortResult");
+            SceneManager.LoadScene("gachaTest");
         }
     }
 }
